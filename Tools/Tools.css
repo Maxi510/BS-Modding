@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+.tool-header {
+    background: #18263d;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid #263b5c;
+}
+
+.tool-header h1 {
+    font-size: 2.3rem;
+    margin: 10px 0;
+}
+
+.subtitle {
+    color: #aebdd1;
+}
+
+
+/* BOTÓN VOLVER */
+
+.back-button {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* CONTENEDOR */
+
+.tool-container {
+    width: min(850px, 92%);
+    margin: 40px auto;
+}
+
+
+/* IMAGEN */
+
+.tool-image {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tool-image img {
+    max-width: 100%;
+    width: 650px;
+    border-radius: 12px;
+}
+
+
+/* SECCIONES */
+
+.tool-section,
+.download-section {
+    background: #18263d;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+.tool-section h2,
+.download-section h2 {
+    margin-bottom: 15px;
+}
+
+
+/* LISTA */
+
+.tool-section ul {
+    padding-left: 25px;
+}
+
+.tool-section li {
+    margin-bottom: 8px;
+}
+
+
+/* INFORMACIÓN */
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #2a3d5b;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+
+/* DESCARGA */
+
+.download-section {
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 13px 28px;
+
+    background: #4d914d;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.download-button:hover {
+    opacity: 0.9;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #8fa3c0;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .tool-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .tool-container {
+        margin-top: 25px;
+    }
+
+    .tool-section,
+    .download-section {
+        padding: 20px;
+    }
+
+    .info-row {
+        flex-direction: column;
+    }
+
+}

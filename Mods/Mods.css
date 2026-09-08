@@ -1,0 +1,203 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.mod-header {
+    background: #18263d;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #263b5c;
+}
+
+.mod-header h1 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.mod-container {
+    width: min(900px, 90%);
+    margin: 40px auto;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.gallery {
+    margin-bottom: 40px;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 15px;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 10px;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+    flex: 0 0 100%;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    scroll-snap-align: center;
+
+    background: #18263d;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.mod-description,
+.mod-info,
+.downloads {
+    background: #18263d;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+
+/* =========================
+   ESPECIFICACIONES
+========================= */
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #2a3d5b;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================
+   DESCARGAS
+========================= */
+
+.downloads {
+    text-align: center;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+.download-button {
+
+    padding: 10px 10px;
+
+    color:rgb(0, 81, 255)
+
+}
+
+
+/* =========================
+   PIE
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #8fa3c0;
+
+    margin-top: 50px;
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 600px) {
+
+    .mod-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .mod-container {
+        width: 94%;
+        margin-top: 25px;
+    }
+
+    .mod-description,
+    .mod-info,
+    .downloads {
+        padding: 20px;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+}
